@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.eng_katta_ota {
+  background-image: url(../images/manzara.png);
+}
+
+.parent-bg {
+  margin: auto;
+  width: 700px;
+  height: 700px;
+  background-color: gold;
+  position: relative;
+}
+
+.parent {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  animation-name: animation-Name;
+  animation-duration: 3s;
+  cursor: pointer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animation-Name {
+  from {
+    background-color: black;
+    top: 0;
+    left: 0;
+  }
+  to {
+    background-color: aqua;
+    top: 0;
+    left: 500px;
+  }
+  0% {
+    background-color: blue;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    background-color: white;
+    top: 0;
+    left: 500px;
+  }
+  50% {
+    background-color: aqua;
+    top: 500px;
+    left: 500px;
+  }
+  75% {
+    background-color: green;
+    top: 500px;
+    left: 0;
+  }
+  100% {
+    background-color: blueviolet;
+    top: 0;
+    left: 0;
+  }
+}
+img {
+  width: 200px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#parents {
+  background-color: red;
+  width: 300px;
+  height: 100px;
+}
+
+@keyframes idParent {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: black;
+  }
+}
